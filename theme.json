@@ -1,6 +1,74 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 3,
-    "settings": {},
-    "styles": {}
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "padding": true
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#7f5539",
+          "name": "Primary Brown"
+        },
+        {
+          "slug": "light",
+          "color": "#f8f5f2",
+          "name": "Light Beige"
+        },
+        {
+          "slug": "dark",
+          "color": "#3e2723",
+          "name": "Dark Brown"
+        }
+      ],
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "14px",
+          "name": "Small"
+        },
+        {
+          "slug": "normal",
+          "size": "18px",
+          "name": "Normal"
+        },
+        {
+          "slug": "large",
+          "size": "24px",
+          "name": "Large"
+        }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "Noto Sans JP",
+          "name": "Noto Sans JP",
+          "slug": "noto-sans-jp",
+          "fontFace": [
+            {
+              "fontFamily": "Noto Sans JP",
+              "fontWeight": "400",
+              "src": [ "file:./assets/fonts/NotoSansJP-VariableFont_wght.woff2" ],
+              "fontWeight": "100 900",
+              "fontStyle": "normal"
+            }
+          ]
+        }
+      ],
+      "lineHeight": true
+    },
+    "styles": {
+      "typegraph": {
+        "fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+      }
+    }
+  }
 }
