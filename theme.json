@@ -47,7 +47,28 @@
           "name": "Large"
         }
       ],
+      "fontFamilies": [
+        {
+          "fontFamily": "Noto Sans JP",
+          "name": "Noto Sans JP",
+          "slug": "noto-sans-jp",
+          "fontFace": [
+            {
+              "fontFamily": "Noto Sans JP",
+              "fontWeight": "400",
+              "src": [ "file:./assets/fonts/NotoSansJP-VariableFont_wght.woff2" ],
+              "fontWeight": "100 900",
+              "fontStyle": "normal"
+            }
+          ]
+        }
+      ],
       "lineHeight": true
+    },
+    "styles": {
+      "typegraph": {
+        "fontFamily": "var(--wp--preset--font-family--noto-sans-jp)"
+      }
     }
   }
 }
