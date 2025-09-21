@@ -1,0 +1,21 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"nl-header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"nl-page","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"48px","bottom":"64px"},"blockGap":"32px"}}} -->
+<main class="wp-block-group nl-page">
+
+  <!-- wp:post-title {"level":2, "className":"nl-page__title"} /-->
+  <!-- wp:post-content {"className":"nl-page__lead"} /-->
+
+  <!-- wp:query {"query":{"parents":["current"],"perPage":12,"postType":"page","order":"asc","orderBy":"menu","inherit":false},"displayLayout":{"type":"grid","columns":3},"className":"nl-page__children nl-query--children-of-current"} -->
+  <div class="wp-block-query nl-page__children nl-query--children-of-current">
+    <!-- wp:post-template -->
+      <!-- wp:post-featured-image {"isLink":true,"className":"nl-card__thumb"} /-->
+      <!-- wp:post-title {"level":3,"isLink":true,"className":"nl-card__title"} /-->
+    <!-- /wp:post-template -->
+  </div>
+  <!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
